@@ -1,11 +1,17 @@
 apply plugin: "groovy"
 apply plugin: "application"
 
+mainClassName = 'org.zirbes.arrrgs.PirateShip'
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compile 'org.codehaus.groovy:groovy-all:2.1.3'
+    compile 'org.codehaus.groovy:groovy-all:2.4.0'
     testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
+}
+
+run {
+    args = [ 'two', 'three', 'four' ]
 }
