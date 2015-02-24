@@ -7,6 +7,6 @@ class PirateShip {
         argv.each{ arg ->
             println " * ${arg}"
         }
-        println "Shiver my timbers, that'd be all."
+        println "Shiver me timbers, that'll be all."
     }
 }
